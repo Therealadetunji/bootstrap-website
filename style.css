@@ -1,0 +1,42 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: "poppins", sans-serif;
+}
+
+.background-img {
+  background-image: url(./images/Header-llustration-desktop@2x.png);
+  background-repeat: no-repeat;
+  background-size: 100%, cover;
+  font-family: "Inter" sans-serif;
+  font-style: normal;
+  font-weight: 800;
+  font-size: 48px;
+  line-height: 60px;
+  text-align: center;
+  letter-spacing: 0.37px;
+  height: 90px;
+  padding: 170px 260px 3500px;
+}
+
+h2 {
+  height: 96px;
+  font-family: "Inter" sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 32px;
+  text-align: center;
+  color: #172b4d;
+  order: 1;
+  margin-top: 24px;
+}
+
+.container .social-media-icons ul {
+  display: flex;
+  list-style-type: none;
+  justify-content: center;
+  order: 2;
+  gap: 12px;
+}
