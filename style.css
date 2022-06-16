@@ -27,7 +27,7 @@ h1 {
   display: flex;
   width: 920px;
   height: 114px;
-  font-family: "Inter";
+  font-family: "Inter" sans-serif;
   font-style: normal;
   font-weight: 800;
   font-size: 48px;
@@ -47,6 +47,6 @@ ul {
 }
 
 ul li {
-  margin: 0px 10px;
+  margin-left: 10px;
   list-style-type: none;
 }
