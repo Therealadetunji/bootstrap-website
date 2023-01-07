@@ -4,154 +4,278 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Bootstrap Website</title>
+    <title>Bootstrap Portfolio</title>
     <!-- CSS only -->
 <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+
+<!-- font awesome-->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
 <!-- JavaScript Bundle with Popper -->
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
 <link rel="stylesheet" href="style.css">
+
+<!-- aos library-->
+<link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 </head>
 <body>
-    <!--Navbar-->
-    <section class=" container header justify-content-center">
-        <nav class="navbar navbar-expand-md text-dark justify-content-center">
-            <ul class="navbar-nav">
-                <li class="nav-item">
-                    <a  class="nav-link" href="#">Portfolio</a>
-                </li>
-                <li class="nav-item">
-                    <a  class="nav-link" href="#">About</a>
-                </li>
-                <li class="nav-item">
-                    <a  class="nav-link" href="#">Contact</a>
-                </li>
-            </ul>
-         </nav>
-         <div class="first-view">
-            <h1 class="justify-content-center">
-            Hey there,i’m Michael.
-            <br>i’m a software developer</br>
-            </h1>
-            <p>
-            i can help you build a product,feature or website look through some of my work
-            and experience if you like what you see and have a project you need coded
-            dont hesitate to contact me
-            </p>
-            <div class="social-media-icons pt-2">
-            <ul>
-                <li>
-                <a href="#">
-                    <img src="./images/Github.png" alt="Github Icon" class="github"
-                  /></a>
-                </li>
-                <li>
-              <a href="#"
-                ><img
-                  src="./images/Linkedin-icon.png"
-                  alt="linkedin Icon"
-                  class="linkedin"
-              /></a>
-                </li>
-                <li>
-                <a href="#"
-                ><img
-                  src="./images/twofingers.png"
-                  alt="two fingers Icon"
-                  class="other"
-              /></a>
-                </li>
-                <li>
-                    <img
-                    src="./images/twitter.png"
-                    alt="Twitter Icon"
-                    class="twitter"
-                    /></a>
-                </li>
-  
-                <li>
-                    <a href="#">
-                        <img src="./images/Mail.png" alt="Mail Icon" class="mail"
-                    /></a>
-                </li>
-            </ul>
-          </div>
-    </section>
 
-     <!-- showcase-->
-    
+  <!-- Navbar -->
+<section class="fixed-top header-transparent" id="Header">
+  <nav class="navbar navbar-expand-md bg">
+    <div>
+      <a href="" class="navbar-brand fs-2 ms-5">Tunji</a>
+    </div>
+    <button class="navbar-toggler me-3" type="button" data-bs-toggle="collapse" data-bs-target="#btn">
+      <i class="fa-solid fa-bars hamburger"></i>
+    </button>
+    <div class="collapse navbar-collapse" id="btn">
+      <ul class="navbar-nav ms-auto me-5 mb-2 mb-lg-0">
+        <li class="nav-item">
+          <a href="#Hero" class="nav-link mx-3">Home</a>
+        </li>
+        <li class="nav-item">
+          <a href="#about" class="nav-link  mx-3">About</a>
+        </li>
+        <li>
+         <a href="#works" class="nav-link mx-3">Recent works</a>
+        </li>
+        <li class="nav-item">
+         <a href="#contact" class="nav-link mx-3">Contact</a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+</section>
+
+<!-- Header/Hero Section -->
+<section class="Hero" id="Hero">
+  <div class="d-flex">
+    <div class="static-text">
+      I'm
+    </div>
+    <ul class="changing-txt">
+      <li>
+        <span>Michael</span>
+      </li>
+      <li>
+        <span>Developer</span>
+      </li>
+      <li>
+        <span>Freelancer</span>
+      </li>
+      <li>
+        <span>Physicist</span>
+      </li>
+    </ul>
+  </div>
   
+    <ul class="d-flex list-social">
+      <li>
+        <a href="https://github.com/Therealadetunji" class="btn btn-primary"><i class="fa-brands fa-github"></i></a>
+      </li>
+      <li>
+        <a href="https://www.linkedin.com/in/adetunji-michael/" class="btn btn-secondary"><i class="fa-brands fa-linkedin"></i></a>
+      </li>
+    </ul>
+</section>
+
+<!-- About Section -->
+
+<section id="about">
+  <div class="d-flex justify-content-center text-center mt-5 ">
+    <h1>
+      ABOUT ME 
+    </h1>
+  </div>
+
+  <div class="container mt-2">
+    <div class="row">
+      <div class="col-lg-5">
+        <img src="/images/C2591BE8-A36E-4280-87D1-94A16F9235F0.JPG" alt="" class="img-fluid about-pic">
+      </div>
+
+      <div class="col-lg-7 justify-content-center text-center">
+        <h3>
+          FULL STACK WEB DEVELOPER
+        </h3>
+
+        <h2 class="mt-3 justify-content-center text-center">
+          <span>A</span>
+          <span>Multi-skilled</span>
+          <span>junior</span>
+          <span>full-stack</span>
+          <span>web</span>
+          <span>developer,</span>
+          <span>passionate</span>
+          <span>about</span>
+          <span>learning</span>
+          <span>and</span>
+          <span>developing</span>
+          <span>production-based</span>
+          <span>websites</span>
+          <span>and</span>
+          <span>hands-on</span>
+          <span>experience</span>
+          <span>in</span>
+          <span>debugging</span>
+          <span>scalable</span>
+          <span>codes.</span>
+        </h2>
+
+        <div class="d-flex justify-content-center text-center mt-5">
+          <h3>
+            SKILLS
+          </h3>
+        </div>
+        <ul class="d-flex justify-content-center text-center mt-3 skills" data-aos="fade-left">
+          <li>
+            <i class="fa-brands fa-square-js"></i>
+          </li>
+          <li>
+            <i class="fa-brands fa-html5"></i>
+          </li>
+          <li>
+            <i class="fa-brands fa-css3-alt"></i>
+          </li>
+          <li>
+            <i class="fa-brands fa-bootstrap"></i>
+          </li>
+          <li>
+            <i class="fas fa-gem"></i>
+          </li>
+        </ul>
+
+    </div>
+  </div>
+</section>
+
+<!-- Recent Works Section -->
+
+<section id="works">
+  <div class="d-flex justify-content-center text-center mt-5 mb-2 ">
+    <h1>
+      RECENT WORKS
+    </h1>
+  </div>
+
+ <div class="container">
+  <div class="row g-3 projects justify-content-center">
+    <div class="col-md-3" data-aos="fade-right">
+      <div class="card shadow">
+        <div class="card-body text-center">
+          <h3 class="card-title">Budget App</h3>
+          <p class="card-text">A mobile web application where you can manage your budget: you have a list of transactions associated with a category, so that you can see how much money you spent and on what.</p>
+          <a href="https://github.com/Therealadetunji/Budget-App" class="btn btn-primary d-flex justify-content-center">View Project</a>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-3" >
+      <div class="card shadow">
+        <div class="card-body text-center">
+          <h3 class="card-title">
+            Tv series Info App</h3>
+          <p class="card-text">The movies Info app is an app that helps users get data about their favourite show, Infos like runtime, rating and summary.</p>
+          <a href="https://github.com/Therealadetunji/React-Capstone-Project" class="btn btn-primary d-flex justify-content-center ">View Project</a>
+        </div>
         
+      </div>
+    </div>
+    <div class=" col-md-3" data-aos="fade-left">
+      <div class="card shadow">
+        <div class="card-body text-center">
+          <h3 class="card-title">
+            SpaceX</h3>
+          <p class="card-text">Spaceship Hub is a conceptual website for future Space Travellers</p>
+          <a href="" class="btn btn-primary d-flex justify-content-center">View Project</a>
+        </div>
+      </div>
+    </div>
+    <div class=" col-md-3">
+      <div class="card shadow">
+        <div class="card-body text-center">
+          <h3 class="card-title">
+            Recipe App</h3>
+          <p class="card-text">The Recipe app keeps track of all your recipes, ingredients, and inventory. Generate a shopping list based on what you have and what you are missing from a recipe.</p>
+          <a href="https://github.com/Therealadetunji/Recipe-App" class="btn btn-primary d-flex justify-content-center">View Project</a>
+        </div>
+      </div>
+    </div>
 
-        <div class="container">
-            <div class="row row-cols-1 row-cols-md-3 g-4">
-                <div class="col">
-                  <div class="card">
-                    <img src="https://mdbcdn.b-cdn.net/img/new/standard/city/041.webp" class="card-img-top" alt="Hollywood Sign on The Hill"/>
-                    <div class="card-body">
-                      <h5 class="card-title">Card title</h5>
-                      
-                    </div>
-                  </div>
-                </div>
-                <div class="col">
-                  <div class="card">
-                    <img src="https://mdbcdn.b-cdn.net/img/new/standard/city/042.webp" class="card-img-top" alt="Palm Springs Road"/>
-                    <div class="card-body">
-                      <h5 class="card-title">Card title</h5>
-                      
-                    </div>
-                  </div>
-                </div>
-                <div class="col">
-                  <div class="card">
-                    <img src="https://mdbcdn.b-cdn.net/img/new/standard/city/043.webp" class="card-img-top" alt="Los Angeles Skyscrapers"/>
-                    <div class="card-body">
-                      <h5 class="card-title">Card title</h5>
-                      
-                    </div>
-                  </div>
-                </div>
-                <div class="col">
-                  <div class="card">
-                    <img src="https://mdbcdn.b-cdn.net/img/new/standard/city/044.webp" class="card-img-top" alt="Skyscrapers"/>
-                    <div class="card-body">
-                      <h5 class="card-title">Card title</h5>
-                      <p class="card-text">
-                        
-                      </p>
-                    </div>
-                  </div>
-                </div>
-                <div class="col">
-                    <div class="card">
-                      <img src="https://mdbcdn.b-cdn.net/img/new/standard/city/044.webp" class="card-img-top" alt="Skyscrapers"/>
-                      <div class="card-body">
-                        <h5 class="card-title">Card title</h5>
-                        <p class="card-text">
-                          
-                        </p>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="col">
-                    <div class="card">
-                      <img src="https://mdbcdn.b-cdn.net/img/new/standard/city/044.webp" class="card-img-top" alt="Skyscrapers"/>
-                      <div class="card-body">
-                        <h5 class="card-title">Card title</h5>
-                        <p class="card-text">
-                          
-                        </p>
-                      </div>
-                    </div>
-                  </div>
+  </div>
+ </div>
+</section>
+
+<!-- Contact Section -->
+
+<section id="contact" class="contact">
+  <div class="container">
+
+    <div class="section-title justify-content-center text-center mb-4">
+      <h1>CONTACT ME</h1>
+      <h3>I'm always interested in building new projects, so if you'd like to chat please get in touch.</h3>
+    </div>
+
+    <div class="row">
+
+      <div class="col-lg-6">
+
+        <div class="row">
+          <div class="col-md-12">
+            <div class="info-box">
+              <i class="bx bx-share-alt"></i>
+              <h3>Social Profiles</h3>
+              <div class="social-links">
+                <a href="https://www.linkedin.com/in/adetunji-michael/" class="linkedin"><i class="fa-brands fa-linkedin"></i></a>
+                <a href="https://github.com/Therealadetunji" class="github"><i class="fa-brands fa-github"></i></a>
               </div>
+            </div>
+          </div>
+          <div class="col-md-6">
+            <div class="info-box mt-4">
+              <i class="bx bx-envelope"></i>
+              <h3>Email Me</h3>
+              <p>madetunji1376@gmail.com</p>
+            </div>
+          </div>
+          <div class="col-md-6">
+            <div class="info-box mt-4">
+              <i class="bx bx-phone-call"></i>
+              <h3>Call Me</h3>
+              <p>+2347038551133</p>
+            </div>
+          </div>
         </div>
 
+      </div>
 
-     </div>
-     
+      <div class="col-lg-6">
+        <form action="https://formsubmit.co/acf56671b7730cad0058e358024e48d6" method="POST" role="form" class="form">
+          <div class="row">
+            <div class="col-md-6 form-group">
+              <input type="text" name="name" class="form-control" id="name" placeholder="Your Name" required>
+            </div>
+            <div class="col-md-6 form-group mt-3 mt-md-0">
+              <input type="email" class="form-control" name="email" id="email" placeholder="Your Email" required>
+            </div>
+          </div>
+          <div class="form-group mt-3">
+            <input type="text" class="form-control" name="subject" id="subject" placeholder="Subject" required>
+          </div>
+          <div class="form-group mt-3">
+            <textarea class="form-control" name="message" rows="6" placeholder="Message" required></textarea>
+          </div>
+          <button class="text-center mt-3 btn btn-primary" type="submit">Send Message</button>
+        </form>
+      </div>
+    </div>
+  </div>
+</section>
 
-    
 
+<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script>
+    AOS.init();
+  </script>
 </body>
 </html>
