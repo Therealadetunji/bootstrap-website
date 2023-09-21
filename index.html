@@ -22,11 +22,11 @@
 
   <!-- Navbar -->
 <section class="fixed-top header-transparent" id="Header">
-  <nav class="navbar navbar-expand-md bg">
+  <nav class="navbar navbar-expand-md bg mb-3">
     <div>
       <a href="" class="navbar-brand fs-2 ms-5">Tunji</a>
     </div>
-    <button class="navbar-toggler me-3" type="button" data-bs-toggle="collapse" data-bs-target="#btn">
+    <button class="navbar-toggler me-5" type="button" data-bs-toggle="collapse" data-bs-target="#btn">
       <i class="fa-solid fa-bars hamburger"></i>
     </button>
     <div class="collapse navbar-collapse" id="btn">
@@ -50,52 +50,43 @@
 
 <!-- Header/Hero Section -->
 <section class="Hero" id="Hero">
-  <div class="d-flex">
-    <div class="static-text">
-      I'm
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-6 d-flex flex-column justify-content-center align-items-start mt-5">
+        <h1 class="header-name">Hi, I'm Michael Adetunji</h1>
+        <h2 class="header-role">
+          A full-stack web developer
+        </h2>
+        <p class="header-paragraph">
+          I'm a full-stack web developer based in Lagos, Nigeria. I have a passion for web development and love to create awesome websites. I have a strong foundation in HTML, CSS, JavaScript and React.js. I am a fast learner and a team player. I am looking for a position where I can grow and learn from other experienced team members.
+        </p>
+        <div>
+          <a href="#contact" class="btn btn-primary mt-3">Hire Me</a> 
+          <a href="https://github.com/Therealadetunji" class="btn btn-secondary mt-3"><i class="fa-brands fa-github"></i></a>
+          <a href="https://www.linkedin.com/in/adetunji-michael/" class="btn btn-primary mt-3"><i class="fa-brands fa-linkedin"></i></a>
+        </div>
+      </div>
+      <div class="col-lg-6 d-flex justify-content-center mt-3
+      ">
+        <img src="/images/hero-image.jpg" alt="design img" class="img1 mt-5">
+        <img src="/images/hero-profilepic.jpg" alt="portfolio-pic" class="img2">
+        <img 
+      </div>
     </div>
-    <ul class="changing-txt">
-      <li>
-        <span>Michael</span>
-      </li>
-      <li>
-        <span>a Developer</span>
-      </li>
-      <li>
-        <span>a Freelancer</span>
-      </li>
-      <li>
-        <span>a Physicist</span>
-      </li>
-    </ul>
   </div>
-  
-    <ul class="d-flex list-social">
-      <li>
-        <a href="https://github.com/Therealadetunji" class="btn btn-primary"><i class="fa-brands fa-github"></i></a>
-      </li>
-      <li>
-        <a href="https://www.linkedin.com/in/adetunji-michael/" class="btn btn-secondary"><i class="fa-brands fa-linkedin"></i></a>
-      </li>
-    </ul>
 </section>
-
 <!-- About Section -->
 
-<section id="about">
-  <div class="d-flex justify-content-center text-center mt-5 ">
-    <h1>
-      ABOUT ME 
-    </h1>
-  </div>
+<section class="about" id="about">
+    <div  class="d-flex justify-content-center text-center">
+      <h1 class="mt-5">
+        ABOUT ME 
+      </h1>
+    </div>
+ 
 
-  <div class="container mt-2">
-    <div class="row">
-      <div class="col-lg-5">
-        <img src="/images/C2591BE8-A36E-4280-87D1-94A16F9235F0.JPG" alt="" class="img-fluid about-pic">
-      </div>
-
-      <div class="col-lg-7 justify-content-center text-center">
+    <div class="container d-flex justify-content-center text-center mt-2">
+      <div class="col-lg-7">
         <h3>
           FULL STACK WEB DEVELOPER
         </h3>
@@ -145,9 +136,8 @@
             <i class="fas fa-gem"></i>
           </li>
         </ul>
-
-    </div>
-  </div>
+      </div>
+    </div>  
 </section>
 
 <!-- Recent Works Section -->
@@ -164,9 +154,10 @@
     <div class="col-md-3" data-aos="fade-right">
       <div class="card shadow">
         <div class="card-body text-center">
-          <h3 class="card-title">Budget App</h3>
-          <p class="card-text">A mobile web application where you can manage your budget: you have a list of transactions associated with a category so that you can see how much money you spent and on what.</p>
-          <a href="https://github.com/Therealadetunji/Budget-App" class="btn btn-primary d-flex justify-content-center">View Project</a>
+          <h3 class="card-title">
+            Gift card Landing Page</h3>
+          <p class="card-text">Gift card landing page</p>
+          <a href="https://giftcardd.netlify.app/" class="btn btn-primary d-flex justify-content-center">View Project</a>
         </div>
       </div>
     </div>
@@ -201,7 +192,15 @@
         </div>
       </div>
     </div>
-
+    <div class="col-md-3">
+      <div class="card shadow">
+        <div class="card-body text-center">
+          <h3 class="card-title">Budget App</h3>
+          <p class="card-text">A mobile web application where you can manage your budget: you have a list of transactions associated with a category so that you can see how much money you spent and on what.</p>
+          <a href="https://github.com/Therealadetunji/Budget-App" class="btn btn-primary d-flex justify-content-center">View Project</a>
+        </div>
+      </div>
+    </div>
   </div>
  </div>
 </section>

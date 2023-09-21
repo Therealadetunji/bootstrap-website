@@ -1,3 +1,8 @@
+:root {
+  --col-md-12: #808080;
+  --col-md-6: #808080;
+}
+
 * {
   box-sizing: border-box;
   margin: 0;
@@ -9,45 +14,47 @@
   background-color: #fff;
 }
 
-.header-transparent {
-  z-index: 997;
-  /* height: 65px; */
-  background: whitesmoke;
+.header-name {
+  font-size: 40px;
+  font-weight: 900;
+  text-transform: uppercase;
 }
 
-.Hero {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 100vh;
-  background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url("/images/portfolio\ pic.jpg");
+.header-role {
+  font-size: 40px;
+}
+
+.img1 {
+  width: 100%;
+  height: 35%;
+}
+
+.img2 {
+  width: 100%;
+  height: 50%;
+  position: relative;
+  top: 12rem;
+  right: 7rem;
+}
+
+.about {
+  background-image: url(./images/about-me.jpg);
+  background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  background-size: cover;
+  height: 100vh;
   width: 100%;
   position: relative;
+  isolation: isolate;
 }
 
-.Hero .static-text {
-  font-size: 60px;
-  font-weight: 600;
-  color: #fff;
-}
-
-.Hero .changing-txt {
-  overflow: hidden;
-  height: 76px;
-  line-height: 90px;
-}
-
-.changing-txt li {
-  list-style: none;
-  font-weight: 500;
-  font-size: 60px;
-  color: burlywood;
-  position: relative;
-  top: 0;
-  animation: slide 6s steps(4) infinite;
+.about::after {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  inset: 0;
+  background: gray;
+  opacity: 0.9;
 }
 
 @keyframes slide {
@@ -56,26 +63,13 @@
   }
 }
 
-.changing-txt li span {
-  position: relative;
-}
-
-.changing-txt li span::after {
-  content: "";
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  left: 0;
-  animation: typing 1.5s steps(15) infinite;
-}
-
- @keyframes typing {
+@keyframes typing {
   100% {
-    left: 100%;
-    margin: 0 -35px 0 35px;
+    right: 30%;
+    margin: 0 -45px 0 45px;
   }
- }
- 
+}
+
 .list-social {
   position: absolute;
   bottom: 200px;
@@ -90,9 +84,8 @@
 
 h1 {
   font-size: 40px;
-  font-weight: 600; 
+  font-weight: 600;
 }
-
 
 @keyframes scale {
   100% {
@@ -204,7 +197,7 @@ span:nth-child(20) {
 }
 
 h3 {
-  color: #A8A8A8;
+  color: #a8a8a8;
   width: 100%;
   font-size: 20px;
 }
@@ -225,7 +218,7 @@ h2 {
 }
 
 .contact .info-box {
-  color: #A8A8A8;
+  color: var(--col-md-12);
   text-align: center;
   box-shadow: 0 0 30px rgba(214, 215, 216, 0.6);
   padding: 20px 0 30px 0;
@@ -242,5 +235,30 @@ h2 {
 .contact .form {
   box-shadow: 0 0 30px rgba(214, 215, 216, 0.6);
   padding: 27px;
+}
+
+.contact .form .form-group {
+  margin-bottom: 20px;
+}
+
+.contact .form .form-control {
+  border-radius: 0;
+  box-shadow: none;
+}
+
+.contact .form .text-area {
+  resize: none;
+  min-height: 200px;
+}
+
+.contact .form .btn-primary {
+  border-radius: 0;
+  border: none;
+  padding: 10px 30px;
+  background: var(--col-md-12);
+  color: #fff;
+  font-size: 16px;
+  font-weight: 600;
+  transition: all 0.3s ease;
 }
 
